@@ -10,6 +10,7 @@ class SearchBar extends React.Component {
   onFormSubmit = event => {
     //stop page from refreshing
     event.preventDefault();
+    this.props.onTermSubmit(this.state.term);
   };
   render() {
     return (
