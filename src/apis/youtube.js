@@ -8,6 +8,8 @@ export default axios.create({
   params: {
     part: "snippet",
     maxResults: 5,
+    //force api to return only video results
+    type: "video",
     key: KEY
   }
 });
